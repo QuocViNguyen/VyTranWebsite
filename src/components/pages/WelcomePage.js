@@ -1,6 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
 import './WelcomePage.css';
+import { NameTitle,  JobTitle } from '../WelcomePageTitles.style';
+import { WelcomeImage } from '../WelcomePageIcons.style';
 
 class WelcomePage extends Component {
     constructor(props) {
@@ -8,26 +10,21 @@ class WelcomePage extends Component {
         this.addValue = 3
         this.state = { count: 1 }
         this.name = 'VY TRAN'
+        this.job = ['DATA', <br/> ,'ANALYST'] 
     }
 
     increaseCountBy5(){
         this.setState((prevState, props) => ({
         count: prevState.count + this.addValue
         }))
-        // console.log(this.state.count)
     }
-
-    nameTitle = () => {
-        return <div className="nameTitle">{this.name}</div>
-    }
-    
 
     render() { 
         return (
             <div className="WelcomePage">
-                <button onClick={() => this.increaseCountBy5()}>Click Me</button>
-                <p>{this.state.count}</p>
-                {this.nameTitle()}
+                <NameTitle>VY TRAN</NameTitle>
+                <JobTitle><text>{ ['DATA', <br/> ,'ANALYST'] }</text></JobTitle>
+                <WelcomeImage></WelcomeImage>
             </div>
           );
     }
