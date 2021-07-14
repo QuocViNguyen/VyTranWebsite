@@ -1,0 +1,20 @@
+.AboutPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ad;
+}
+
+@font-face {
+    font-family: 'FredokaOne';
+    src: url(/src/fonts/FredokaOne-Regular.ttf) format('truetype');
+  }
+
+.Title {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 4rem;
+    text-align: center;
+    font-family: FredokaOne;
+    color: rgb(255, 255, 255);
+}

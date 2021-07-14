@@ -27,6 +27,10 @@ code {
     letter-spacing: 4vw;
   }
 
+  .InnerDiv {
+    padding-top: 10vh;
+  }
+
   @media (max-width: 768px) {
     .WelcomePage {
       background-color: tomato;

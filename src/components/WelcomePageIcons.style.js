@@ -10,5 +10,4 @@ export const WelcomeImage = styled.img.attrs({
     margin-top: 5vw;
     width: 14vw;
     height: auto;
-    
 `

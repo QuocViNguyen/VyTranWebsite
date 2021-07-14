@@ -22,9 +22,11 @@ class WelcomePage extends Component {
     render() { 
         return (
             <div className="WelcomePage">
-                <NameTitle>VY TRAN</NameTitle>
-                <JobTitle><text>{ ['DATA', <br/> ,'ANALYST'] }</text></JobTitle>
-                <WelcomeImage></WelcomeImage>
+                <div className="InnerDiv">
+                    <NameTitle>VY TRAN</NameTitle>
+                    <JobTitle><text>{ ['DATA', <br/> ,'ANALYST'] }</text></JobTitle>
+                    <WelcomeImage></WelcomeImage>
+                </div>
             </div>
           );
     }
