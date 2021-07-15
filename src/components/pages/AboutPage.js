@@ -4,11 +4,13 @@ import './AboutPage.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {ProfilePic} from '../AboutPageProfilePic.style'
-import {AboutIntro} from '../AboutPageIntro.style'
+import {ProfilePic} from '../AboutPageProfilePic.style';
+import {AboutIntro} from '../AboutPageIntro.style';
 import styled from "styled-components";
-import * as Util from '../Ultility.style'
+import * as Util from '../Ultility.style';
+import Resume from '../../assets/resume.pdf';
 
 class AboutPage extends Component {
     constructor(props) {
@@ -29,6 +31,10 @@ class AboutPage extends Component {
                         <Util.Spacer height="5rem"/>
                         <AboutIntro/>
                     </Col>
+                </Row>
+                <Util.Spacer height="10rem"/>
+                <Row style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Button href={Resume} download="Vy_Resume.pdf" size="lg">Download Resume</Button>
                 </Row>
                 </Container>
             </div>
