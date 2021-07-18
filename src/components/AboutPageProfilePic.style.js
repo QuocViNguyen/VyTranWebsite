@@ -94,10 +94,6 @@ const LinkedTag =styled.a.attrs({
     height: auto;
 `
 
-const SocialHolder = styled.div`
-    display: flex;
-`
-
 const SocialStyling = {
     display: 'flex',
     flexDirection: 'row',

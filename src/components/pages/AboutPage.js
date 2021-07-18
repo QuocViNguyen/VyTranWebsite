@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {ProfilePic} from '../AboutPageProfilePic.style';
 import {AboutIntro} from '../AboutPageIntro.style';
-import styled from "styled-components";
 import * as Util from '../Ultility.style';
 import Resume from '../../assets/resume.pdf';
 
