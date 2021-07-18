@@ -11,18 +11,22 @@ class SkillPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            TechSkills : ['RStudio', 'SAS', 'Microsoft Office', 'Data Visualization', 'Mac OS/Windows OS'],
+            TechSkills : ['RStudio/SAS', 'Microsoft Office', 'Data Visualization', 'Mac OS/Windows OS'],
             SoftSkills : ['Excellent interpersonal skills', 'Strong multi-tasker', 'Skilled to work in high pressure environments', 'Strong communicator']
           }
     }
 
     li_styling = {
         border: 'none',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
     }
 
     ligr_styling = {
         textAlign: 'left'
+    }
+
+    bullet_styling = {
+        marginRight: '10px'
     }
 
     render() { 
@@ -33,19 +37,18 @@ class SkillPage extends Component {
                     <Col sm={{ span:5 , offset: 1}}>
                     
                         <ListGroup style={this.ligr_styling}>
-                            {/* <ListGroup.Item style={this.li_styling}><CaretRightFill /> Cras justo odio</ListGroup.Item>
-                            <ListGroup.Item style={this.li_styling}><CaretRightFill /> Dapibus ac facilisis in</ListGroup.Item>
-                            <ListGroup.Item style={this.li_styling}><CaretRightFill /> Morbi leo risus</ListGroup.Item>
-                            <ListGroup.Item style={this.li_styling}><CaretRightFill /> Porta ac consectetur ac</ListGroup.Item>
-                            <ListGroup.Item style={this.li_styling}><CaretRightFill /> Vestibulum at eros</ListGroup.Item> */}
-                            {this.state.TechSkills.map (SoftSkillFnc => (
-                                <ListGroup.Item style={this.li_styling}><CaretRightFill/>{SoftSkillFnc}</ListGroup.Item>
+                            {this.state.TechSkills.map (TechSkillFnc => (
+                                <ListGroup.Item style={this.li_styling}><CaretRightFill style={this.bullet_styling}/>{TechSkillFnc}</ListGroup.Item>
                             ))}
                         </ListGroup>
                         
                     </Col>
                     <Col sm={{ span:5 , offset: 1}}>
-                        AAAA
+                        <ListGroup style={this.ligr_styling}>
+                                {this.state.SoftSkills.map (SoftSkillFnc => (
+                                    <ListGroup.Item style={this.li_styling}><CaretRightFill style={this.bullet_styling}/>{SoftSkillFnc}</ListGroup.Item>
+                                ))}
+                        </ListGroup>
                     </Col>
                 </Row>
                 </Container>
