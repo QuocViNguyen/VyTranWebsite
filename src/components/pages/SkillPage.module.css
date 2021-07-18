@@ -1,0 +1,20 @@
+.SkillPage {
+    width: 100vw;
+    height: 50vh;
+    background-color: #FFC5BF;
+}
+
+@font-face {
+    font-family: 'FredokaOne';
+    src: url(/src/fonts/FredokaOne-Regular.ttf) format('truetype');
+  }
+
+.Title {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 4rem;
+    text-align: center;
+    font-family: FredokaOne;
+    color: rgb(0, 0, 0);
+}

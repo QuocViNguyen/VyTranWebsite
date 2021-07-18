@@ -1,6 +1,5 @@
 import React from 'react';
 import { Component } from 'react';
-import './AboutPage.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,6 +9,7 @@ import {ProfilePic} from '../AboutPageProfilePic.style';
 import {AboutIntro} from '../AboutPageIntro.style';
 import * as Util from '../Ultility.style';
 import Resume from '../../assets/resume.pdf';
+import styles from './AboutPage.module.css';
 
 class AboutPage extends Component {
     constructor(props) {
@@ -19,9 +19,9 @@ class AboutPage extends Component {
 
     render() { 
         return ( 
-            <div className="AboutPage">
+            <div className={styles.AboutPage}>
                 <Container fluid>
-                <Col className="Title">ABOUT ME</Col>
+                <Col className={styles.Title}>ABOUT ME</Col>
                 <Row>
                     <Col sm={{ span:2 , offset: 1}}>
                         <ProfilePic/>
