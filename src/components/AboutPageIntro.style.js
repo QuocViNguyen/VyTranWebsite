@@ -9,10 +9,10 @@ const IntroStyling = {
     fontFamily: 'FredokaOne',
     src: 'url(/src/fonts/FredokaOne-Regular.ttf)',
     color: 'white',
-    fontSize: '2.5rem',
+    fontSize: '1em',
     textAlign: 'left',
-    marginRight: '8rem',
-    lineHeight: '6vh',
+    marginRight: '8em',
+    lineHeight: '1em',
 }
 
 export function AboutIntro(){

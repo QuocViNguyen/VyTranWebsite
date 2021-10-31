@@ -16,21 +16,21 @@ const LinkedLink = 'https://www.linkedin.com/in/vy-tran-17b61a178/?fbclid=IwAR01
 
 //#region Styled Components
 const Profile = styled.div`
-    height: 39vh;
-    width: 15vw;
+    /* height: 39vh;
+    width: 15vw; */
 `
 
 const ProfileFrame = styled.div`
-    height: 30vh;
-    width: 15vw;
+    /* height: 30vh;
+    width: 15vw; */
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
 `
 
 const InnerPRofileFrame = styled.div`
-    height: 28vh;
-    width: 12vw;
+    /* height: 28vh;
+    width: 12vw; */
     background-color: #F5D2CF;
     margin-top: 4%;
 `

@@ -23,7 +23,7 @@ class AboutPage extends Component {
                 <Container fluid>
                 <Col className={styles.Title}>ABOUT ME</Col>
                 <Row>
-                    <Col sm={{ span:2 , offset: 1}}>
+                    <Col sm={{ span:2 , offset: 1}} xs={{ span: 6, offset: 3}}>
                         <ProfilePic/>
                     </Col>
                     <Col sm={{ span:8 , offset: 1}}>
